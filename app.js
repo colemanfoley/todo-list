@@ -21,8 +21,7 @@ var MainView = Backbone.View.extend({
 
 var TaskView = Backbone.View.extend({
   model: Task,
-  initialize: function(){
-  },
+
   render: function(){
     return this.$el.html('<li class="task">'+this.model.get('text')+'</ul><input type="checkbox">');
   }
