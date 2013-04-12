@@ -21,15 +21,17 @@ var MainView = Backbone.View.extend({
 
 var TaskView = Backbone.View.extend({
   model: Task,
+  tagName: "li",
+  className: "task",
 
   render: function(){
-    return this.$el.html('<li class="task">'+this.model.get('text')+'</ul><input type="checkbox">');
+    return this.$el.html('<input type="checkbox">'+this.model.get('text'));
   }
 });
 
 var tasks = new Tasks([
-  new Task({text: "test", completed: true}),
-  new Task({text: "test2", completed: true})
+  new Task({text: "test", completed: false}),
+  new Task({text: "test2", completed: false})
 ]);
 
 var mainView = new MainView({collection: tasks});
