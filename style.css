@@ -1,5 +1,8 @@
 li {
 	list-style-type: none;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .completed {

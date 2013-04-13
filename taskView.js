@@ -8,7 +8,7 @@ var TaskView = Backbone.View.extend({
     if (this.model.get('completed')) {
       this.$el.addClass("completed");
     }
-    return this.$el.html('<input type="checkbox" class="check">'+this.model.get('text'));
+    return this.$el.html('<input type="checkbox" class="check"><span class="taskText">'+this.model.get('text')+"</span");
   },
 
   toggleComplete: function(){
