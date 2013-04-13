@@ -3,6 +3,7 @@ var MainView = Backbone.View.extend({
   collection: Tasks,
   initialize: function(){
     this.listenTo(this.collection, 'change', this.render);
+    this.listenTo(this.collection, 'add', this.render);
     this.render();
   },
   render: function(){
