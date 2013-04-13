@@ -35,12 +35,12 @@ var TaskView = Backbone.View.extend({
     return this.$el.html('<input type="checkbox" class="check">'+this.model.get('text'));
   },
 
-  markComplete: function(){
-    this.model.set("completed", true);
+  toggleComplete: function(){
+    this.model.set("completed", !this.model.get("completed"));
   },
 
   events: {
-    'click .check': 'markComplete'
+    'click .check': 'toggleComplete'
   }
 });
 
