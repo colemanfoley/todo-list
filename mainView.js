@@ -1,6 +1,7 @@
 //MainView grabs all the rendered subviews (TaskViews) and appends them to its el.
 var MainView = Backbone.View.extend({
   collection: Tasks,
+  id: "container",
   initialize: function(){
     this.listenTo(this.collection, 'change', this.render);
     this.listenTo(this.collection, 'add', this.render);

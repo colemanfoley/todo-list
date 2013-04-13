@@ -5,3 +5,11 @@ li {
 .completed {
 	text-decoration: line-through;
 }
+
+.taskInput {
+	width: 300px;
+}
+
+#container {
+	text-align: center;
+}
