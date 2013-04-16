@@ -1,4 +1,4 @@
-todo-list
+To-do List
 =========
 
-Todo list with Backbone
+I made this simple to-do list app to practice Backbone.js.
